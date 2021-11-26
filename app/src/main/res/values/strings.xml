@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">京城</string>
+
+    <string name="dialog_permssion_title">权限申请失败</string>
+    <string name="dialog_permssion_msg">我们需要的一些权限被您拒绝或者系统发生错误申请失败，请您到设置页面手动授权，否则功能无法正常使用！</string>
+    <string name="dialog_permssion_button">好，去设置</string>
+</resources>
