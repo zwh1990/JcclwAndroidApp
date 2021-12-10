@@ -16,7 +16,7 @@ public class UrlHelper {
 
     public static final String TAG = UrlHelper.class.getSimpleName();
 
-    public static String API_SERVER_URL = "http://192.168.8.21:8081/learnspringboot/";
+    public static String API_SERVER_URL = "http://192.168.8.110:8080/learnspringboot/";
 
     /**
      * 提交图片接口  savePicture

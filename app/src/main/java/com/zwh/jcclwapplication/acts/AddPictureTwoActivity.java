@@ -208,6 +208,7 @@ public class AddPictureTwoActivity extends AppCompatActivity
         ImageView imv = new ImageView(this);
         int surplus_5 = ScreenUtils.dip2px(this, 5);
         int imgWidth = (width - surplus_5 * 6) / 3;
+        imv.setScaleType(ImageView.ScaleType.FIT_XY);
 
         imv.setOnClickListener(v -> PictureDetailActivity.launchSelf(AddPictureTwoActivity.this, tImage.getOriginalPath()));
         imv.setOnLongClickListener(view -> {
@@ -223,7 +224,7 @@ public class AddPictureTwoActivity extends AppCompatActivity
             public void onResourceReady(@NonNull Drawable resource, @Nullable Transition<? super Drawable> transition) {
                 int intrinsicWidth = resource.getIntrinsicWidth();
                 int intrinsicHeight = resource.getIntrinsicHeight();
-                int imgHeight = intrinsicHeight * imgWidth / intrinsicWidth;
+                int imgHeight = 2 * imgWidth / 3;
                 LOGUtils.w(TAG, "imgHeight--->" + imgHeight);
                 LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(imgWidth,
                         imgHeight);

@@ -28,6 +28,6 @@ public class Utilty {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return Base64.encodeToString(data,Base64.DEFAULT);
+        return Base64.encodeToString(data,Base64.NO_WRAP);
     }
 }
